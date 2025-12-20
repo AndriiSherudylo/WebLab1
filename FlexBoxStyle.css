@@ -5,64 +5,56 @@ body {
 div {
     background-color: rgba(157, 222, 0, 0.3);
     border: 2px solid black;
-    box-sizing: border-box; /* Важливо для коректних розрахунків ширини з бордерами */
+    box-sizing: border-box; 
 }
 
 p {
     margin: 10px;
 }
 
-/* Головний контейнер - вертикальний стек */
 .flex-main-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Секція, що містить перші три колонки/рядки */
 .top-section {
     display: flex;
     flex-direction: row;
-    flex-grow: 1; /* Займає весь доступний простір до футера */
+    flex-grow: 1;
 }
 
-/* Item 1 - 30% ширини */
 .item1 {
     width: 30%;
 
     display: flex;
-    flex-direction: column; /* Розташовує елементи один під одним */
-    justify-content: flex-start; /* Вирівнює контент по верхньому краю */
-    align-items: center; /* Центрує текст по горизонталі всередині колонки */
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
 
     padding-top: 20px; 
     text-align: center;
 }
 
-
-/* Права частина (70% ширини) */
 .right-wrapper {
     width: 70%;
     display: flex;
     flex-direction: column;
 }
 
-/* Item 2 - верхня панель у правій частині */
 .item2 {
     width: 100%;
     text-align: left;
 }
 
-/* Контейнер для Item 3, 5 та Item 4 */
 .sub-row {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
 }
 
-/* Середня колонка (40% від загального, що є ~57% від батьківського wrapper) */
 .center-col {
-    width: 57.14%; /* Розрахунок: 40 / 70 * 100 */
+    width: 57.14%; 
     display: flex;
     flex-direction: column;
 }
@@ -77,17 +69,16 @@ p {
     text-align: left;
 }
 
-/* Item 4 - права колонка (30% від загального, що є ~42.8% від wrapper) */
 .item4 {
-    width: 42.86%; /* Розрахунок: 30 / 70 * 100 */
+    width: 42.86%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Футер (Item 6) */
 .item6 {
     width: 100%;
     text-align: right;
 }
+
